@@ -146,6 +146,17 @@ form.sign-in-form {
   background: #4a10b5;
 }
 
+.no-fill-button {
+  width: 375px;
+  height: 60px;
+  border: none;
+  background: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  color: #5D13E7;
+  text-decoration: underline #5d13e746 0.5px;
+}
+
 .signin-text:hover{
   color:#4a10b5;
   border-bottom-color: #5d13e74d;
