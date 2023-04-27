@@ -1,6 +1,5 @@
 import './App.css';
 import React from 'react';
-//не спорю, миллион импортов - это ущербно. но по другому оно просто не отображает ничего
 import ReactCardSlider from './components/ReactCardSlider';
 import google from './images/google.svg';
 import amazon from './images/amazon.svg';
