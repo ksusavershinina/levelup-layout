@@ -5,37 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/user.css">
+  <link rel="stylesheet" href="css/customer.css">
   <link rel="shortcut icon" href="images/favicon.ico">
-  <style>
-    .upload-image {
-      border: 1px solid #FF0000;
-      border-radius: 10px;
-      margin-top: 10px 0;
-    }
-    .input-field {
-      border: 1px solid #FF0000;
-    }
-    .mistakes {
-      display: grid;
-      grid-template-rows: repeat(3, 1fr);
-      align-items: center;
-      justify-content: start;
-    }
-    .mistake-text {
-      font-family: 'Ubuntu';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 15px;
-      line-height: 23px;
-      align-self: center;
-      justify-self: center;
-      color: #FF0000;
-      padding: 0.3% 0;
-      width: 100%;
-    }
-      </style>
-  <title>Личный кабинет студента</title>
+  <title>Личный кабинет заказчика</title>
 </head>
 <body>
   <div class="container">
@@ -53,41 +25,36 @@
     </header>
     <div class="user-profile">
       <h1 class="page-name">
-        Создайте профиль
+        Личный кабинет
       </h1>
       <form class="create-profile">
         <div class="input-fields">
           <div class="input-wrapper">
             <div class="input-image">
               <label for="upload-btn">
-                <img src="images/error-image.svg" alt="Загрузите изображение профиля" class="upload-image">
+                <img src="images/upload-img.svg" alt="Загрузите изображение профиля" class="upload-image">
               </label>
-              <input type="file" id="upload-btn" style="display: none;">
-              
             </div>
             <div class="text-input">
               <div class="input-field">
-                <input type="text" placeholder="Имя..." required>
+                <!-- имя -->
               </div>
               <div class="input-field">
-                <input type="email" placeholder="Почта..." required>
+                <!-- почта -->
               </div>
               <div class="input-field">
-                <input type="text" placeholder="Telegram..." required>
+                <!-- телега -->
               </div>
-            </div>
-            <div class="mistakes">
-              <p class="mistake-text">Это обязательное поле</p>
-              <p class="mistake-text">Это обязательное поле</p>
-              <p class="mistake-text">Это обязательное поле</p>
             </div>
           </div>
           <label for="skills" class="h2">Навыки</label>
-          <textarea placeholder="Расскажите нам, какими навыками обладаете?" class="text-area" id="skills"></textarea>
-          
+          <textarea class="text-area" id="skills" readonly>
+            <!-- навыки -->
+          </textarea>
+
           <label for="portfolio" class="h2">Портфолио</label>
           <div class="input-field"><input type="text" placeholder="Введите ссылку на портфолио..." id="portfolio" required></div>
-          <p class="mistake-text">Это обязательное поле</p>
+          
           <label for="information" class="h2">О себе</label>
           <textarea placeholder="Расскажите что-нибудь о себе" class="text-area" id="information"></textarea>
           <input type="submit" value="Сохранить" class="btn">
@@ -95,6 +62,5 @@
       </form>
     </div>
   </div>
-</div>
 </body>
 </html>
