@@ -11,9 +11,16 @@
     .upload-image {
       border: 1px solid #FF0000;
       border-radius: 10px;
+      margin-top: 10px 0;
     }
     .input-field {
       border: 1px solid #FF0000;
+    }
+    .mistakes {
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      align-items: center;
+      justify-content: start;
     }
     .mistake-text {
       font-family: 'Ubuntu';
@@ -21,9 +28,11 @@
       font-weight: 400;
       font-size: 15px;
       line-height: 23px;
-      align-self: self-start;
+      align-self: center;
+      justify-self: center;
       color: #FF0000;
       padding: 0.3% 0;
+      width: 100%;
     }
       </style>
   <title>Личный кабинет студента</title>
@@ -51,23 +60,25 @@
           <div class="input-wrapper">
             <div class="input-image">
               <label for="upload-btn">
-                <img src="images/upload-img.svg" alt="Загрузите изображение профиля" class="upload-image">
+                <img src="images/error-image.svg" alt="Загрузите изображение профиля" class="upload-image">
               </label>
               <input type="file" id="upload-btn" style="display: none;">
-              <p class="mistake-text">Максимальный объём - 1 МБ</p>
+              
             </div>
             <div class="text-input">
               <div class="input-field">
                 <input type="text" placeholder="Имя..." required>
               </div>
-              <p class="mistake-text">Это обязательное поле</p>
               <div class="input-field">
                 <input type="email" placeholder="Почта..." required>
               </div>
-              <p class="mistake-text">Это обязательное поле</p>
               <div class="input-field">
                 <input type="text" placeholder="Telegram..." required>
               </div>
+            </div>
+            <div class="mistakes">
+              <p class="mistake-text">Это обязательное поле</p>
+              <p class="mistake-text">Это обязательное поле</p>
               <p class="mistake-text">Это обязательное поле</p>
             </div>
           </div>

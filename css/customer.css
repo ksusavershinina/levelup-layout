@@ -219,7 +219,7 @@ input[type="file"] {
   .input-wrapper {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    column-gap: 2vw;
+    column-gap: 2;
   }
   .logo-img img {
     height: 7vh;
