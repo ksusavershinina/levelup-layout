@@ -233,4 +233,7 @@ input[type="file"] {
     height: 4vh;
     width: 8vw;
   }
+  .mistakes {
+    display: none;
+  }
 }

@@ -6,6 +6,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/customer.css">
+  <style>
+    .input-field {
+      border: 1px solid #FF0000;
+    }
+    .mistakes {
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      align-items: center;
+      justify-content: start;
+    }
+    .mistake-text {
+      font-family: 'Ubuntu';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 23px;
+      align-self: center;
+      justify-self: center;
+      color: #FF0000;
+      padding: 0.3% 0;
+      width: 100%;
+    }
+  </style>
   <link rel="shortcut icon" href="images/favicon.ico">
   <title>Личный кабинет заказчика</title>
 </head>
@@ -26,7 +49,7 @@
         <div class="company-wrapper">
           <div class="company-image">
             <label for="upload-btn">
-              <img src="images/customer-upload-image.svg" alt="Загрузите изображение профиля" class="upload-image" style="max-width: 100%;">
+              <img src="images/customer-mistake.svg" alt="Загрузите изображение профиля" class="upload-image">
             </label>
             <input type="file" id="upload-btn" style="display: none;">
           </div>
@@ -34,9 +57,11 @@
             <div class="input-field">
               <input type="text" placeholder="Название компании..." required>
             </div>
+            <p class="mistake-text">Это обязательное поле</p>
             <div class="input-field">
               <input type="text" placeholder="Ссылка на сайт..." required>
             </div>
+            <p class="mistake-text">Это обязательное поле</p>
           </div>
           <div class="representative">
             <p class="h2">Представитель бренда</p>
@@ -44,7 +69,7 @@
               <div class="input-wrapper">
                 <div class="input-image">
                   <label for="upload-btn">
-                    <img src="images/upload-img.svg" alt="Загрузите изображение профиля" class="upload-image">
+                    <img src="images/error-image.svg" alt="Загрузите изображение профиля" class="upload-image">
                   </label>
                   <input type="file" id="upload-btn" style="display: none;">
                 </div>
@@ -59,12 +84,18 @@
                     <input type="text" placeholder="Telegram..." required>
                   </div>
                 </div>
+                <div class="mistakes">
+                  <p class="mistake-text">Это обязательное поле</p>
+                  <p class="mistake-text">Это обязательное поле</p>
+                  <p class="mistake-text">Это обязательное поле</p>
+                </div>
               </div>
               <label for="skills" class="h2">Навыки</label>
               <textarea placeholder="Расскажите нам, какими навыками обладаете?" class="text-area" id="skills"></textarea>
               
               <label for="portfolio" class="h2">Портфолио</label>
               <div class="input-field"><input type="text" placeholder="Введите ссылку на портфолио..." id="portfolio" required></div>
+              <p class="mistake-text">Это обязательное поле</p>
               
               <label for="information" class="h2">О себе</label>
               <textarea placeholder="Расскажите что-нибудь о себе" class="text-area" id="information"></textarea>
