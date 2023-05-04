@@ -185,6 +185,10 @@ input[type="file"] {
   overflow-y: auto;
 }
 
+.text-area:focus {
+  outline: none !important;
+}
+
 .btn {
   width: 180px;
   height: 60px;

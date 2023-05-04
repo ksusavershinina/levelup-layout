@@ -159,10 +159,9 @@ input[type="file"] {
   overflow-y: auto;
 }
 
-.text-area:hover {
-  border: none;
+.text-area:focus {
+  outline: none !important;
 }
-
 .btn {
   width: 180px;
   height: 60px;
