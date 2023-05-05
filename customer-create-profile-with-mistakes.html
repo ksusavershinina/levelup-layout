@@ -28,6 +28,19 @@
       padding: 0.3% 0;
       width: 100%;
     }
+    .company-image {
+      border: 1px solid #FF0000;
+    }
+    .input-image {
+      border: 1px solid #FF0000;
+      border-radius: 15px;
+      background-color: #f6f6f6;
+    }
+    .input-image img {
+      margin: auto;
+      height: 13vh;
+      width: 11vw;
+    }
   </style>
   <link rel="shortcut icon" href="images/favicon.ico">
   <title>Личный кабинет заказчика</title>
@@ -49,7 +62,7 @@
         <div class="company-wrapper">
           <div class="company-image">
             <label for="upload-btn">
-              <img src="images/customer-mistake.svg" alt="Загрузите изображение профиля" class="upload-image">
+              <img src="images/customer-error.svg" alt="Загрузите изображение профиля" class="upload-image">
             </label>
             <input type="file" id="upload-btn" style="display: none;">
           </div>
@@ -69,7 +82,7 @@
               <div class="input-wrapper">
                 <div class="input-image">
                   <label for="upload-btn">
-                    <img src="images/error-image.svg" alt="Загрузите изображение профиля" class="upload-image">
+                    <img src="images/profile-error.svg" alt="Загрузите изображение профиля" class="upload-image">
                   </label>
                   <input type="file" id="upload-btn" style="display: none;">
                 </div>
