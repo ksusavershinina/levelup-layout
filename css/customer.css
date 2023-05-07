@@ -97,28 +97,40 @@ input[type="file"] {
 
 .company-image {
   display: flex;
-  align-self: center;
-  justify-self: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f6f6f6;
+  border-radius: 15px;
+  width: 100%;
   margin-bottom: 10px;
+  height: 20vh;
 }
 
 .company-image img {
-  width: 100%;
-  height: 20vh;
+  margin: auto;
+  width: 55vw;
+  height: 10vh;
 }
 
 .input-image {
   display: flex;
   align-self: center;
   justify-self: flex-start;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
+  background-color: #f6f6f6;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+}
+.input-image img {
+  margin: auto;
+  width: 12.5vw;
+  height: 8vh;
 }
 
-.input-image img {
-  width: 100%;
-  height: 20vh;
-}
 
 .text-input {
   display: flex;
@@ -185,6 +197,10 @@ input[type="file"] {
   overflow-y: auto;
 }
 
+.text-area:focus {
+  outline: none !important;
+}
+
 .btn {
   width: 180px;
   height: 60px;
@@ -228,5 +244,13 @@ input[type="file"] {
   .escape-img img {
     height: 4vh;
     width: 8vw;
+  }
+  .mistakes {
+    display: none;
+  }
+  .input-image img {
+    display: flex;
+    align-self: center;
+    justify-self: center;
   }
 }
