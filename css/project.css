@@ -17,13 +17,13 @@
 }
 
 .container {
-  width: 1320px;
-  height: 670px;
+  width: 91.7vw;
+  height: 76.7vh;
   border-radius: 40px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  padding: 60px;
+  padding: 6.9vh 4.2vw;
 }
 
 .header-section{
@@ -42,7 +42,7 @@
 h1{
   font-style: medium;
   font-weight: 500;
-  font-size: calc(28px + 16 * (100vw / 1440));
+  font-size: calc(24px + 16 * (100vw / 1440));
   color: #000;
 }
 
