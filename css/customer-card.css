@@ -18,7 +18,7 @@
 
 .container {
     width: 50vw;
-    height: 34.3vh;
+    height: 34.325vh;
     border-radius: 20px;
     background-color: #fff;
     display: flex;
@@ -31,6 +31,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .page-name {
@@ -47,10 +48,14 @@ h1{
 }
 
 .escape-img {
-    display: flex;
-    width: 2.1vw;
-    height: 3.4vh;
-    align-self: center;
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+img {
+  width: 30px;
+  height: 30px;
 }
 
 .content-section{
@@ -61,8 +66,8 @@ h1{
 }
 
 .profile-image{
-    width: 10.4vw;
-    height: 17.2vh;
+    width: 10.417vw;
+    height: 10.417vw;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -82,34 +87,53 @@ h1{
     font-weight: 500;
 }
 
-@media (max-width:635px) {
-    .header {
-      height: 8vh;
-    }
-    .user-profile {
-      width: 90%;
-      align-items: start;
-      margin-top: 10vh;
-    }
-    .text-area {
-      width: 100%;
-    }
-    .input-wrapper {
-      display: grid;
-      grid-template-columns: 1fr 2fr;
-    }
-    .logo-img img {
-      height: 5vh;
-      width: 18vw;
-    }
-    .escape-img img {
-      height: 5vh;
-      width: 8vw;
-    }
-    .mistakes {
-      display: none;
-    }
+@media (max-width:1024px) {
+  .container{
+    padding: 3.4vh 4.2vw 3.4vh 4.2vw ;
   }
+
+  .escape-img {
+    width: 28px;
+    height: 28px;
+  }
+  img{
+    width: 28px;
+    height: 28px;
+  }
+  
+  .profile-image{
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media (max-width:768px){
+  .escape-img {
+    width: 28px;
+    height: 28px;
+  }
+  img{
+    width: 28px;
+    height: 28px;
+  }
+}
+
+@media (max-width:426px){
+  .container{
+    width: 240px;
+  }
+  .profile-image{
+    display: none;
+  }
+  .escape-img {
+    width: 25px;
+    height: 25px;
+  }
+  img{
+    width: 25px;
+    height: 25px;
+  }
+}
 
 
 
