@@ -23,7 +23,7 @@
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    padding: 3.4vh 2.1vw 3.4vh 4.2vw ;
+    padding: 3.4vh 2.1vw 6.865vh 4.2vw ;
 }
 
 .header-section{
@@ -67,7 +67,7 @@ img {
 
 .profile-image{
     width: 10.417vw;
-    height: 10.417vw;
+    height: 17.162vh;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -89,7 +89,7 @@ img {
 
 @media (max-width:1024px) {
   .container{
-    padding: 3.4vh 4.2vw 3.4vh 4.2vw ;
+    padding: 3.4vh 2.1vw 6.865vh 4.2vw ;
   }
 
   .escape-img {
@@ -118,9 +118,10 @@ img {
   }
 }
 
-@media (max-width:426px){
+@media (max-width:700px){
   .container{
     width: 240px;
+    align-items: center;
   }
   .profile-image{
     display: none;
