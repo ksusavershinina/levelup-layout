@@ -217,10 +217,22 @@ input[type="file"] {
   .header {
     height: 8vh;
   }
+  .page-name {
+    margin-left: 1%;
+  }
   .user-profile {
     width: 90%;
     align-items: start;
     margin-top: 10vh;
+  }
+  .create-profile {
+    width: 100%;
+  }
+  .company-wrapper {
+    width: 100%;
+  }
+  .input-fields {
+    width: 100%;
   }
 
   .company-image img {

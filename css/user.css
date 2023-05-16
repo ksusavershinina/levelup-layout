@@ -194,6 +194,18 @@ input[type="file"] {
     align-items: start;
     margin-top: 10vh;
   }
+  .page-name {
+    margin-left: 1%;
+  }
+  .create-profile {
+    width: 100%;
+  }
+  .company-wrapper {
+    width: 100%;
+  }
+  .input-fields {
+    width: 100%;
+  }
   .text-area {
     width: 100%;
   }
