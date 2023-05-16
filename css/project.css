@@ -5,6 +5,10 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
+html {
+  font-size: 100%;
+}
+
 .background {
   width: 100vw;
   height: 100vh;
@@ -17,13 +21,13 @@
 }
 
 .container {
-  width: 1320px;
-  height: 670px;
+  width: 91.7vw;
+  height: 76.7vh;
   border-radius: 40px;
   background-color: #fff;
   display: flex;
   flex-direction: column;
-  padding: 60px;
+  padding: 6.9vh 4.2vw;
 }
 
 .header-section{
@@ -31,6 +35,11 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+
+.header{
+  display: flex;
 }
 
 .page-name {
@@ -40,17 +49,23 @@
 }
 
 h1{
-  font-style: medium;
+  line-height: 28px;
   font-weight: 500;
-  font-size: calc(28px + 16 * (100vw / 1440));
+  font-size: calc(20px + 20*(100vw/1440));
   color: #000;
 }
 
 .escape-img {
-  display: flex;
-  width: 3.5vw;
-  height: 5.7vh;
+  position: relative;
+  width: 50px;
+  height: 50px;
 }
+
+img {
+  width: 50px;
+  height: 50px;
+}
+
 
 .create-project{
   overflow-y: auto;
@@ -70,7 +85,7 @@ h1{
 }
 
 .input-field {
-  width: 37.5vw;
+  width: 38.542vw;
   height: 7vh;
   background: #F6F6F6;
   margin-bottom: 30px;
@@ -92,7 +107,7 @@ h1{
 
 .text-area {
   display: block;
-  width: 64.6vw;
+  width: 77.083vw;
   height: 36vh;
   background-color: #F6F6F6;
   margin-bottom: 30px;
@@ -113,6 +128,7 @@ h1{
   height: 60px;
   border: none;
   border-radius: 15px;
+  position: relative;
   background: #5D13E7;
   color: #fff;
   font-weight: 400;
@@ -123,6 +139,64 @@ h1{
   width: 0;
 }
 
+@media (max-width:1024px){
+  img{
+    width: 40px;
+    height: 40px;
+  }
+  .escape-img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width:768px){
+  .escape-img {
+    width: 30px;
+    height: 30px;
+  }
+  img{
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width:426px){
+  .container{
+    padding-top:30px;
+    padding-bottom:30px;
+    padding-right:30px;
+    padding-left:30px;
+  }
+
+  .header-section{
+    align-items: center;
+  }
+
+  .create-project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .escape-img {
+    width: 20px;
+    height: 20px;
+  }
+  img{
+    width: 20px;
+    height: 20px;
+  }
+
+  .btn{
+    width: 180px;
+    padding: 15px;
+  }
+
+  .input-field{
+    width: 77.083vw;
+  }
+}
 
 
 

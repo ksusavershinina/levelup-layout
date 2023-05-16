@@ -201,15 +201,9 @@ input[type="file"] {
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
-  .logo-img img {
-    height: 5vh;
-    width: 18vw;
-  }
+  
   .escape-img img {
     height: 5vh;
     width: 8vw;
-  }
-  .mistakes {
-    display: none;
   }
 }
