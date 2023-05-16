@@ -21,8 +21,8 @@ html {
 }
 
 .container {
-  width: 91.7vw;
-  height: 76.7vh;
+  width: 83.333vw;
+  height: 75.515vh;
   border-radius: 40px;
   background-color: #fff;
   display: flex;
@@ -57,13 +57,13 @@ h1{
 
 .escape-img {
   position: relative;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
 }
 
 img {
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
 }
 
 
@@ -85,7 +85,7 @@ img {
 }
 
 .input-field {
-  width: 38.542vw;
+  width: 36.806vw;
   height: 7vh;
   background: #F6F6F6;
   margin-bottom: 30px;
@@ -107,7 +107,7 @@ img {
 
 .text-area {
   display: block;
-  width: 77.083vw;
+  width: 65.278vw;
   height: 36vh;
   background-color: #F6F6F6;
   margin-bottom: 30px;
@@ -141,12 +141,12 @@ img {
 
 @media (max-width:1024px){
   img{
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
   }
   .escape-img {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
   }
 }
 

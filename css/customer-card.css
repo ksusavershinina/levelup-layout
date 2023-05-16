@@ -66,8 +66,8 @@ img {
 }
 
 .profile-image{
-    width: 10.417vw;
     height: 17.162vh;
+    aspect-ratio: 1/1;
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -78,7 +78,7 @@ img {
 .text-container{
     display: flex;
     flex-direction: column;
-    row-gap: 3.4vh;
+    row-gap: 3vh;
     font-weight: 400;
     font-size: calc(14px + 6 * (100vw / 1440));
 }
@@ -122,6 +122,16 @@ img {
   .container{
     width: 240px;
     align-items: center;
+    justify-content: center;
+    padding-right: 15px;
+    padding-bottom: 27px ;
+  }
+  .header-section{
+    align-items: center;
+  }
+  .content-section{
+    row-gap: 0;
+    align-self: flex-start;
   }
   .profile-image{
     display: none;
