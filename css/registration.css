@@ -111,6 +111,7 @@ form.sign-in-form {
   font-size: 24px;
   font-weight: 400;
   color: #5D13E759;
+  cursor: pointer;
 }
 .check-customer__checkbox {
   position: relative;
@@ -151,6 +152,7 @@ form.sign-in-form {
   font-weight: 400;
   font-size: 20px;
   margin-top: 90px;
+  cursor: pointer;
 }
 .btn:hover {
   background: #4a10b5;
@@ -164,6 +166,7 @@ form.sign-in-form {
   font-size: 20px;
   color: #5D13E7;
   text-decoration: underline #5d13e746 0.5px;
+  cursor: pointer;
 }
 #sign-in-btn2, #sign-up-btn2 {
   display: none;
@@ -268,7 +271,7 @@ img {
 
 /* responsive */ 
 
-@media (max-width:635px){
+@media (max-width:635px) {
   .container::before{
     display: none;
   }

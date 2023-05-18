@@ -20,8 +20,6 @@ sign_up_btn2.addEventListener("click", () => {
   container.classList.remove("sign-in-mode2");
 });
 
-
-
 const checkbox = document.querySelector('.checkbox-default');
 const checkboxText = document.querySelector('.checkbox-text');
 
@@ -32,3 +30,4 @@ checkbox.addEventListener('change', function() {
     checkboxText.style.color = '#5D13E759';
   }
 });
+

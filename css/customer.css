@@ -34,6 +34,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  height: 9%;
 }
 
 .header__section {
@@ -51,6 +52,7 @@ body {
 .escape-img img {
   height: 6vh;
   width: 4vw;
+  cursor: pointer;
 }
 
 .user-profile {
@@ -71,12 +73,13 @@ body {
   color: #5D13E7;
 }
 
-form {
+.create-profile {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin: 1%;
+  width: 100%;
 }
 
 .company-wrapper {
@@ -86,13 +89,18 @@ form {
   margin: 10px 0;
 }
 
-label {
+.upload-btn-label {
   display: inline-block;
-  cursor: pointer;
 }
 
 input[type="file"] {
   display: none;
+  cursor: pointer;
+}
+
+.upload-image {
+  cursor: pointer;
+  height: 100%;
 }
 
 .company-image {
@@ -105,6 +113,7 @@ input[type="file"] {
   width: 100%;
   margin-bottom: 10px;
   height: 20vh;
+  cursor: pointer;
 }
 
 .company-image img {
@@ -128,9 +137,8 @@ input[type="file"] {
 .input-image img {
   margin: auto;
   width: 12.5vw;
-  height: 8vh;
+  height: 12vh;
 }
-
 
 .text-input {
   display: flex;
@@ -211,6 +219,7 @@ input[type="file"] {
   font-weight: 400;
   font-size: 20px;
   align-self: end;  
+  cursor: pointer;
 }
 
 @media (max-width:635px) {
@@ -222,7 +231,7 @@ input[type="file"] {
   }
   .user-profile {
     width: 90%;
-    align-items: start;
+    align-items: center;
     margin-top: 10vh;
   }
   .create-profile {
@@ -265,4 +274,8 @@ input[type="file"] {
     align-self: center;
     justify-self: center;
   }
+}
+
+::-webkit-scrollbar{
+  width: 0;
 }

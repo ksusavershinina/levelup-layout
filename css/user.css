@@ -34,6 +34,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  height: 9%;
 }
 
 .header__section {
@@ -51,6 +52,7 @@ body {
 .escape-img img {
   height: 6vh;
   width: 4vw;
+  cursor: pointer;
 }
 
 .user-profile {
@@ -63,7 +65,7 @@ body {
   margin: 15vh 0 6vh 0;
 }
 
-form {
+.create-profile {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,9 +88,8 @@ form {
   column-gap: 0.8vw;
 }
 
-label {
+.upload-image-label {
   display: inline-block;
-  cursor: pointer;
 }
 
 input[type="file"] {
@@ -110,7 +111,8 @@ input[type="file"] {
 .input-image img {
   margin: auto;
   width: 12.5vw;
-  height: 8vh;
+  height: 12vh;
+  cursor: pointer;
 }
 
 .text-input {
@@ -151,7 +153,7 @@ input[type="file"] {
   display: flex;
   font-style: normal;
   font-weight: 500;
-  margin-bottom: 1vh;
+  margin: 0.5vh 0;
   font-size: calc(16px + 10 * (100vw / 1440));
   color: #5D13E7;
 }
@@ -183,6 +185,7 @@ input[type="file"] {
   font-weight: 400;
   font-size: 20px;
   align-self: end;  
+  cursor: pointer;
 }
 
 @media (max-width:635px) {
@@ -218,4 +221,10 @@ input[type="file"] {
     height: 5vh;
     width: 8vw;
   }
+  .mistakes {
+    display: none;
+  }
+}
+::-webkit-scrollbar{
+  width: 0;
 }
