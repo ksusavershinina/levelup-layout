@@ -21,8 +21,8 @@ html {
 }
 
 .container {
-  width: 83.333vw;
-  height: 75.515vh;
+  width:75vw;
+  height: 70vh;
   border-radius: 40px;
   background-color: #fff;
   display: flex;
@@ -85,7 +85,7 @@ img {
 }
 
 .input-field {
-  width: 36.806vw;
+  width: 33.126vw;
   height: 7vh;
   background: #F6F6F6;
   margin-bottom: 30px;
@@ -107,7 +107,7 @@ img {
 
 .text-area {
   display: block;
-  width: 65.278vw;
+  width: 58.752vw;
   height: 36vh;
   background-color: #F6F6F6;
   margin-bottom: 30px;
