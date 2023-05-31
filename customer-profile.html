@@ -17,47 +17,43 @@
           <img src="images/level-up-white.svg" alt="">
         </div>
       </div>
-      <div class="header__section">
-        <div class="escape-img">
-          <img src="images/icons/escape.svg" alt="">
-        </div>
-      </div>
     </header>
     <div class="user-profile">
       <h1 class="page-name">
         Личный кабинет
       </h1>
       <form class="create-profile">
-        <div class="input-fields">
-          <div class="input-wrapper">
-            <div class="input-image">
-              <label for="upload-btn">
-                <img src="images/upload-img.svg" alt="Загрузите изображение профиля" class="upload-image">
-              </label>
-            </div>
-            <div class="text-input">
-              <div class="input-field">
-                <!-- имя -->
+        <div class="company-wrapper">
+          <div class="company-image">
+            <img src="images/upload-img.svg" alt="Загрузите изображение профиля" class="upload-image" style="max-width: 100%;">
+          </div>
+          <div class="text-input">
+            <div class="input-field"></div>
+            <div class="input-field"></div>
+          </div>
+          <div class="representative">
+            <p class="h2">Представитель бренда</p>
+            <div class="input-fields">
+              <div class="input-wrapper">
+                <div class="input-image">
+                    <img src="images/upload-img.svg" alt="Загрузите изображение профиля" class="upload-image">
+                </div>
+                <div class="text-input">
+                  <div class="input-field"></div>
+                  <div class="input-field"></div>
+                  <div class="input-field"></div>
+                </div>
               </div>
-              <div class="input-field">
-                <!-- почта -->
-              </div>
-              <div class="input-field">
-                <!-- телега -->
-              </div>
+              <label for="skills" class="h2">Навыки</label>
+              <textarea class="text-area" id="skills" readonly></textarea>
+              
+              <label for="portfolio" class="h2">Портфолио</label>
+              <div class="input-field"></div>
+              
+              <label for="information" class="h2">О себе</label>
+              <textarea class="text-area" id="information" readonly></textarea>
             </div>
           </div>
-          <label for="skills" class="h2">Навыки</label>
-          <textarea class="text-area" id="skills" readonly>
-            <!-- навыки -->
-          </textarea>
-
-          <label for="portfolio" class="h2">Портфолио</label>
-          <div class="input-field"><input type="text" placeholder="Введите ссылку на портфолио..." id="portfolio" required></div>
-          
-          <label for="information" class="h2">О себе</label>
-          <textarea placeholder="Расскажите что-нибудь о себе" class="text-area" id="information"></textarea>
-          <input type="submit" value="Сохранить" class="btn">
         </div>
       </form>
     </div>

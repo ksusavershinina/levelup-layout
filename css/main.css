@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: 'Ubuntu', sans-serif;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -37,15 +38,13 @@
   border: 2px solid #5D13E7;
   background-color: #fff;
   color: #5D13E7;
+  cursor: pointer;
 }
 
 .fill {
   background-color: #5D13E7;
   color: #fff;
   border: 2px solid #5D13E7;
-}
-
-.header-button {
   cursor: pointer;
 }
 
@@ -99,16 +98,6 @@
   font-size: calc(16.5px + 7.5 * (100vw / 1440));
 }
 
-@media (max-width: 767px) {
-  .h1 {
-    font-size: calc(24px + (16 + 16*0.7) * ((100vw - 320px) / 1440));
-  }
-  .h3 {
-    font-size: calc(16.5px + (7.5 + 7.5*0.7) * ((100vw - 320px) / 1440));
-  }
-}
-
-
 .carousel-name {
   font-style: normal;
   font-weight: 500;
@@ -128,6 +117,15 @@
   height: 89%;
 }
 
+@media (max-width: 767px) {
+  .h1 {
+    font-size: calc(24px + (16 + 16*0.7) * ((100vw - 320px) / 1440));
+  }
+  .h3 {
+    font-size: calc(16.5px + (7.5 + 7.5*0.7) * ((100vw - 320px) / 1440));
+  }
+}
+
 @media (max-width: 480px) {
   .logo {
     width: 25vw;
@@ -142,3 +140,5 @@
     display: none;
   }
 }
+
+
