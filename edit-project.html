@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/fonts.css">
-  <link rel="stylesheet" href="css/project.css">
+  <link rel="stylesheet" href="css/project-editing.css">
   <link rel="shortcut icon" href="images/favicon.ico">
   <title>Личный кабинет студента</title>
 </head>
@@ -31,6 +31,16 @@
                       </div>
                       <div>
                         <textarea placeholder="Требования к исполнителю" class="text-area" id="information"></textarea>
+                      </div>
+                      <div class="choosing">
+                        <div>
+                          <input class="radio" type="radio">
+                          <label class="status" for="inProgress">В процессе</label>
+                        </div>
+                        <div>
+                          <input class="radio" type="radio">
+                          <label class="status" for="completed">Завершен</label>
+                        </div>
                       </div>
                 </div>
                 <input type="submit" value="Сохранить" class="btn">

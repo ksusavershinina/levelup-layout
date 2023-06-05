@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  
+  html {
+    font-size: 100%;
+  }
+  
+  .background {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(246, 246, 246, 0.8);
+  }
+  
+  .container {
+    width:75vw;
+    height: 70vh;
+    border-radius: 40px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 6.9vh 4.2vw;
+  }
+  
+  .header-section{
+    margin-bottom: 3.4vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header{
+    display: flex;
+  }
+  
+  .page-name {
+    display: flex;
+    align-items: center;
+    margin-right: 10vw;
+  }
+  
+  h1{
+    line-height: 28px;
+    font-weight: 500;
+    font-size: calc(20px + 20*(100vw/1440));
+    color: #000;
+  }
+  
+  .escape-img {
+    position: relative;
+    width: 45px;
+    height: 45px;
+  }
+  
+  img {
+    width: 45px;
+    height: 45px;
+  }
+  
+  
+  .create-project{
+    overflow-y: auto;
+  }
+  
+  .text-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .input-fields {
+    display: flex;
+    flex-direction: column;
+    column-gap: 3.4vh;
+    
+  }
+  
+  .input-field {
+    width: 33.126vw;
+    height: 7vh;
+    background: #F6F6F6;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    display: flex;
+  }
+  
+  .input-field input {
+    flex: 5;
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    margin-left: 15px;
+    font-size: calc(24px + 2.5 * (100vw / 1440));
+    font-weight: 400;
+    color: #000;
+  }
+  
+  .text-area {
+    display: block;
+    width: 58.752vw;
+    height: 36vh;
+    background-color: #F6F6F6;
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: calc(24px + 2.5 * (100vw / 1440));
+    border: none;
+    resize: none;
+    overflow-y: auto;
+  }
+  
+  .text-area:focus {
+    outline: none !important;
+  }
+  
+  .btn {
+    width: 180px;
+    height: 60px;
+    border: none;
+    border-radius: 15px;
+    position: relative;
+    background: #5D13E7;
+    color: #fff;
+    font-weight: 400;
+    font-size: calc(24px + 2.5 * (100vw / 1440));
+  }
+
+.choosing{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+  row-gap: 5px;
+}
+
+.radio{
+  appearance: none;
+}
+
+.radio::before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 2px solid #5D13E7;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.radio:not(:disabled):active::before {
+  background-color: #5D13E7;
+  border-color: #5D13E7;
+}
+
+.radio:checked::before {
+  border-color: #5D13E7;
+  background-color: #5D13E7;
+  background-image: url("../images/icons/point.svg");
+}
+
+.status{
+  font-size: calc(24px + 2.5 * (100vw / 1440));
+}
+
+
+  ::-webkit-scrollbar{
+    width: 0;
+  }
+  
+  @media (max-width:1024px){
+    img{
+      width: 35px;
+      height: 35px;
+    }
+    .escape-img {
+      width: 35px;
+      height: 35px;
+    }
+  }
+  
+  @media (max-width:768px){
+    .escape-img {
+      width: 30px;
+      height: 30px;
+    }
+    img{
+      width: 30px;
+      height: 30px;
+    }
+  }
+  
+  @media (max-width:426px){
+    .container{
+      padding-top:20px;
+      padding-bottom:20px;
+      padding-right:20px;
+      padding-left:20px;
+    }
+  
+    .header-section{
+      align-items: center;
+    }
+  
+    .create-project{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1{
+      font-size: 18px;
+    }
+  
+    .escape-img {
+      width: 20px;
+      height: 20px;
+    }
+    img{
+      width: 20px;
+      height: 20px;
+    }
+  
+    .btn{
+      width: 180px;
+      padding: 15px;
+    }
+  
+    .input-field{
+      width: 210px;
+    }
+
+    .input-field input {
+      font-size: 16px;
+    }
+
+    .text-area {
+      width: 210px;
+      font-size: 16px;
+    }
+
+    .radio::before{
+      width: 10px;
+      height: 10px;
+      margin-right: 5px;
+    }
+
+    .status{
+      font-size: 16px;
+    }
+
+    .btn{
+      width: auto;
+      height: auto;
+      font-size: 16px;
+    }
+  }
